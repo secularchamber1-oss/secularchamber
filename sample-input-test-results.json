@@ -1,0 +1,239 @@
+{
+  "checkedAt": "2026-10-19T12:53:35.612Z",
+  "scope": "Local API sample-input tests; no live records changed. Browser UI, real microphone and GPS not exercised.",
+  "passed": 40,
+  "failed": 0,
+  "samples": {
+    "client": {
+      "name": "SAMPLE ONLY — आरती / Aarti",
+      "phone": "+91 00000 00000",
+      "locality": "Tilak Nagar (synthetic)",
+      "language": "Hindi",
+      "category": "Civil / property",
+      "assignee": "Sample advocate",
+      "description": "Synthetic consultation\nNo real person or matter.",
+      "status": "Received",
+      "update": "Sample request received.",
+      "appointment": "2026-11-03",
+      "contactConsent": true,
+      "reference": "SC-2026-2389E339",
+      "id": "7a8ce4c8-4191-4235-948a-c72704961d39",
+      "kind": "client",
+      "created": "2026-10-19T12:53:35.221Z"
+    },
+    "camp": {
+      "title": "SAMPLE ONLY — Legal aid camp",
+      "locality": "Tilak Nagar",
+      "pin": "110018",
+      "venue": "Synthetic public community hall",
+      "date": "2026-11-08",
+      "description": "Sample document-awareness session",
+      "status": "Confirmed",
+      "permission": "SYNTHETIC-APPROVAL-001",
+      "staffingConfirmed": true,
+      "location": {
+        "lat": 28.63,
+        "lng": 77.1
+      },
+      "id": "15a00e56-fd5a-4737-a14e-7109b3df6b35",
+      "kind": "camp",
+      "created": "2026-10-19T12:53:35.514Z"
+    },
+    "task": {
+      "title": "SAMPLE ONLY — collect documents",
+      "assignee": "Sample volunteer",
+      "due": "2026-11-04",
+      "priority": "High",
+      "status": "Open",
+      "description": "Synthetic follow-up only",
+      "id": "af418701-67e1-4f54-8820-7056f8711105",
+      "kind": "task",
+      "created": "2026-10-19T12:53:35.252Z"
+    },
+    "episode": {
+      "title": "SAMPLE ONLY — awareness episode",
+      "assignee": "Sample content lead",
+      "due": "2026-11-05",
+      "status": "Script",
+      "description": "Synthetic script\nKnow your next step.",
+      "url": "https://example.com/sample-video",
+      "id": "29939ec5-3409-488a-a1c4-9fc0d1b7c735",
+      "kind": "episode",
+      "created": "2026-10-19T12:53:35.265Z"
+    },
+    "consultation": {
+      "title": "SAMPLE ONLY — consultation",
+      "clientId": "7a8ce4c8-4191-4235-948a-c72704961d39",
+      "notes": "Synthetic notes in Hindi: दस्तावेज़ की जाँच करें।\nManual notes without recording.",
+      "nextAction": "Ask sample advocate to review",
+      "recordingConsent": false,
+      "consentAt": null,
+      "status": "Draft — advocate review required",
+      "id": "04b8e19f-3e25-4058-8b3a-188a1cf6a290",
+      "kind": "consultation",
+      "created": "2026-10-19T12:53:35.281Z"
+    }
+  },
+  "results": [
+    {
+      "name": "client: all entered fields persist exactly",
+      "result": "PASS"
+    },
+    {
+      "name": "camp: all entered fields persist exactly",
+      "result": "PASS"
+    },
+    {
+      "name": "task: all entered fields persist exactly",
+      "result": "PASS"
+    },
+    {
+      "name": "episode: all entered fields persist exactly",
+      "result": "PASS"
+    },
+    {
+      "name": "consultation: manual notes persist without audio consent",
+      "result": "PASS"
+    },
+    {
+      "name": "client: update and reload",
+      "result": "PASS"
+    },
+    {
+      "name": "camp: update and reload",
+      "result": "PASS"
+    },
+    {
+      "name": "task: update and reload",
+      "result": "PASS"
+    },
+    {
+      "name": "episode: update and reload",
+      "result": "PASS"
+    },
+    {
+      "name": "consultation: update and reload",
+      "result": "PASS"
+    },
+    {
+      "name": "acknowledgement: exact lookup in account records",
+      "result": "PASS"
+    },
+    {
+      "name": "votes: ten concurrent duplicate submissions count once",
+      "result": "PASS"
+    },
+    {
+      "name": "votes: withdrawal removes support",
+      "result": "PASS"
+    },
+    {
+      "name": "records: other account sees none of these samples",
+      "result": "PASS"
+    },
+    {
+      "name": "client: missing name",
+      "result": "PASS"
+    },
+    {
+      "name": "client: missing consent",
+      "result": "PASS"
+    },
+    {
+      "name": "client: whitespace-only name",
+      "result": "PASS"
+    },
+    {
+      "name": "client: object instead of name",
+      "result": "PASS"
+    },
+    {
+      "name": "client: malformed optional appointment",
+      "result": "PASS"
+    },
+    {
+      "name": "client: invalid status",
+      "result": "PASS"
+    },
+    {
+      "name": "client: non-phone text",
+      "result": "PASS"
+    },
+    {
+      "name": "camp: invalid PIN",
+      "result": "PASS"
+    },
+    {
+      "name": "camp: missing locality",
+      "result": "PASS"
+    },
+    {
+      "name": "camp: missing community need",
+      "result": "PASS"
+    },
+    {
+      "name": "camp: invalid latitude",
+      "result": "PASS"
+    },
+    {
+      "name": "camp: invalid longitude",
+      "result": "PASS"
+    },
+    {
+      "name": "camp: text coordinates",
+      "result": "PASS"
+    },
+    {
+      "name": "camp: confirmed without approvals",
+      "result": "PASS"
+    },
+    {
+      "name": "camp: complete confirmation details accepted",
+      "result": "PASS"
+    },
+    {
+      "name": "task: missing owner",
+      "result": "PASS"
+    },
+    {
+      "name": "task: impossible calendar date",
+      "result": "PASS"
+    },
+    {
+      "name": "task: invalid priority",
+      "result": "PASS"
+    },
+    {
+      "name": "episode: invalid URL",
+      "result": "PASS"
+    },
+    {
+      "name": "episode: invalid stage",
+      "result": "PASS"
+    },
+    {
+      "name": "consultation: unknown client",
+      "result": "PASS"
+    },
+    {
+      "name": "consultation: missing notes",
+      "result": "PASS"
+    },
+    {
+      "name": "consultation: missing next action",
+      "result": "PASS"
+    },
+    {
+      "name": "consultation: nonexistent audio object",
+      "result": "PASS"
+    },
+    {
+      "name": "record: oversized notes rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "client: acknowledgement cannot be replaced on update",
+      "result": "PASS"
+    }
+  ]
+}
